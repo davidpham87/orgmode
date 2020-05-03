@@ -1,0 +1,891 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.4">
+    
+    
+      
+        <title>Block - Orgmode</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4007cdc.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.8435c73a.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ef5350">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="red" data-md-color-accent="">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#block-element-formatting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Orgmode" class="md-header-nav__button md-logo" aria-label="Orgmode">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Orgmode
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Block
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/davidpham87/orgmode/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Orgmode" class="md-nav__button md-logo" aria-label="Orgmode">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Orgmode
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/davidpham87/orgmode/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Orgmode
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Orgmode" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Orgmode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Block" class="md-nav__link md-nav__link--active">
+      Block
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../core-test/" title="orgmode.core-test" class="md-nav__link">
+      orgmode.core-test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../core/" title="Core" class="md-nav__link">
+      Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../inline-test/" title="orgmode.inline-test" class="md-nav__link">
+      orgmode.inline-test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../inline/" title="Inline" class="md-nav__link">
+      Inline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../util/" title="orgmode.util" class="md-nav__link">
+      orgmode.util
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/davidpham87/orgmode/edit/master/doc/orgmode/block.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h2 id="block-element-formatting">Block Element Formatting<a class="headerlink" href="#block-element-formatting" title="Permanent link">&para;</a></h2>
+<p>These functions parse an Org-mode file and generate the necessary
+heirarchy of list and block elements.</p>
+<h1 id="orgmodeblock">orgmode.block<a class="headerlink" href="#orgmodeblock" title="Permanent link">&para;</a></h1>
+<details class="tip"><summary>(ns)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">ns </span><span class="nv">orgmode.block</span>
+  <span class="p">(</span><span class="ss">:require</span> <span class="p">[</span><span class="nv">clojure.string</span> <span class="ss">:as</span> <span class="nv">s</span><span class="p">]</span>
+            <span class="p">[</span><span class="nv">clojure.zip</span> <span class="ss">:as</span> <span class="nv">zip</span><span class="p">])</span>
+  <span class="p">(</span><span class="ss">:use</span> <span class="p">[</span><span class="nv">orgmode.inline</span><span class="p">]))</span>
+</code></pre></div>
+
+</details>
+<h3 id="regular-expressions-for-block-elements">Regular Expressions for Block Elements<a class="headerlink" href="#regular-expressions-for-block-elements" title="Permanent link">&para;</a></h3>
+<p>The following set of regular expressions match start and end
+elements of blocks or block elements themselves.  Note that some
+items are line items, but I considered them blocks of the
+smallest size.</p>
+<h2 id="attrib-re"><code>attrib-re</code><a class="headerlink" href="#attrib-re" title="Permanent link">&para;</a></h2>
+<p>Attribute Regular Expression that captures the attribute name and
+   any values (as a single string)</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">attrib-re</span>
+  <span class="o">#</span><span class="s">&quot;^#\+(\w+):\s*(.*)&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="prop-open-re"><code>prop-open-re</code><a class="headerlink" href="#prop-open-re" title="Permanent link">&para;</a></h2>
+<p>Regex for the beginning of a properties block</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">prop-open-re</span>
+  <span class="o">#</span><span class="s">&quot;\s*:PROPERTIES:\s*&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="property-line-re"><code>property-line-re</code><a class="headerlink" href="#property-line-re" title="Permanent link">&para;</a></h2>
+<p>Regex that captures property keys and values from within a
+   properties drawer</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">property-line-re</span>
+  <span class="o">#</span><span class="s">&quot;\s*:(\w+):\s*(.*)&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="block-open-re"><code>block-open-re</code><a class="headerlink" href="#block-open-re" title="Permanent link">&para;</a></h2>
+<p>Regex that matches the start of a begin_* block. It captures the
+   type of block along with any parameters (as a single string)</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">block-open-re</span>
+  <span class="o">#</span><span class="s">&quot;^#\+(?i)BEGIN_(\w+)(?:\s+(.*))?&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="block-close-re"><code>block-close-re</code><a class="headerlink" href="#block-close-re" title="Permanent link">&para;</a></h2>
+<p>Regex that matches the end of a begin block</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">block-close-re</span>
+  <span class="o">#</span><span class="s">&quot;^#\+(?i)END_&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="comment-re"><code>comment-re</code><a class="headerlink" href="#comment-re" title="Permanent link">&para;</a></h2>
+<p>Regex that matches an inline comment</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">comment-re</span>
+  <span class="o">#</span><span class="s">&quot;^\s*#\s+(.*)&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="headline-re"><code>headline-re</code><a class="headerlink" href="#headline-re" title="Permanent link">&para;</a></h2>
+<p>Regex that matches headlines and todo items. This regex does a
+   bunch of work and captures the leading stars, TODO or DONE tags,
+   headline text, and tags.</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">headline-re</span>
+  <span class="c1">;; TODO -- capture priority here?</span>
+ <span class="o">#</span><span class="s">&quot;^(\*+)\s+(?:(TODO|DONE)\s+)?(.*?)(?:\s+:(.*):)?&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="plain-list-re"><code>plain-list-re</code><a class="headerlink" href="#plain-list-re" title="Permanent link">&para;</a></h2>
+<p>Regex that matches a plain list. This regex captues leading spaces,
+   the bullets or indices, and item text</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">plain-list-re</span>
+  <span class="o">#</span><span class="s">&quot;^(\s*)([-+*]|[0-9]+[.)])\s(.*)&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="footnote-def-re"><code>footnote-def-re</code><a class="headerlink" href="#footnote-def-re" title="Permanent link">&para;</a></h2>
+<p>Regex denoting a footnote definition. Captures identifier and
+   definition</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">footnote-def-re</span>
+  <span class="o">#</span><span class="s">&quot;^\s*\[(\d+|fn:(.*))\] (.*)&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="table-re"><code>table-re</code><a class="headerlink" href="#table-re" title="Permanent link">&para;</a></h2>
+<p>Regex to match table lines. Captures fields as one string</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">table-re</span>
+  <span class="o">#</span><span class="s">&quot;^\s*\|(.*)&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="table-formula-re"><code>table-formula-re</code><a class="headerlink" href="#table-formula-re" title="Permanent link">&para;</a></h2>
+<p>Regex to match table formula. Caputes the list of formulas as one
+   string</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">table-formula-re</span>
+  <span class="o">#</span><span class="s">&quot;\s*#\+TBLFM:\s*(.*)&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h3 id="processing-functions">Processing Functions<a class="headerlink" href="#processing-functions" title="Permanent link">&para;</a></h3>
+<h2 id="handle-last-line"><code>handle-last-line</code><a class="headerlink" href="#handle-last-line" title="Permanent link">&para;</a></h2>
+<p>Macro to help break out of further processing if line is
+  nil. Returns root of z</p>
+<details class="tip"><summary>(defmacro)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmacro </span><span class="nv">handle-last-line</span>
+  <span class="p">[[</span><span class="nv">line</span> <span class="nv">z</span><span class="p">]</span> <span class="o">&amp;</span> <span class="nv">body</span><span class="p">]</span>
+  <span class="o">`</span><span class="p">(</span><span class="nb">if-not </span><span class="p">(</span><span class="nb">nil? </span><span class="o">~</span><span class="nv">line</span><span class="p">)</span>
+     <span class="p">(</span><span class="k">do </span><span class="o">~@</span><span class="nv">body</span><span class="p">)</span>
+     <span class="p">(</span><span class="nf">zip/root</span> <span class="o">~</span><span class="nv">z</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="next-line"><code>next-line</code><a class="headerlink" href="#next-line" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(declare)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">declare </span><span class="nv">next-line</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-attrib"><code>parse-attrib</code><a class="headerlink" href="#parse-attrib" title="Permanent link">&para;</a></h2>
+<p>At current location z, add attribute with name and values</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-attrib</span> <span class="p">[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nb">name </span><span class="nv">values</span><span class="p">])</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-attrib</span>
+  <span class="p">[[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nb">name </span><span class="nv">values</span><span class="p">]]</span>
+  <span class="p">(</span><span class="k">fn </span><span class="p">[]</span>
+    <span class="p">(</span><span class="nf">next-line</span>
+     <span class="nv">rest</span>
+     <span class="p">(</span><span class="nf">zip/edit</span> <span class="nv">z</span>
+               <span class="o">#</span><span class="p">(</span><span class="nf">assoc-in</span> <span class="nv">%1</span> <span class="p">[</span><span class="ss">:attribs</span> <span class="p">(</span><span class="nb">keyword </span><span class="p">(</span><span class="nf">.toLowerCase</span> <span class="nv">name</span><span class="p">))]</span> <span class="nv">values</span> <span class="p">)))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-comment"><code>parse-comment</code><a class="headerlink" href="#parse-comment" title="Permanent link">&para;</a></h2>
+<p>At current location z, add comment with parsed text</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-comment</span> <span class="p">[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">comment</span><span class="p">])</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-comment</span>
+  <span class="p">[[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">comment</span><span class="p">]]</span>
+  <span class="p">(</span><span class="k">fn </span><span class="p">[]</span>
+    <span class="p">(</span><span class="nf">next-line</span>
+     <span class="nv">rest</span>
+     <span class="p">(</span><span class="nf">zip/append-child</span>
+      <span class="nv">z</span>
+      <span class="p">{</span><span class="ss">:type</span> <span class="ss">:comment</span>
+       <span class="ss">:content</span> <span class="p">(</span><span class="nf">orgmode.inline/parse-inline-elements</span> <span class="nv">comment</span><span class="p">)}))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-footnote"><code>parse-footnote</code><a class="headerlink" href="#parse-footnote" title="Permanent link">&para;</a></h2>
+<p>Add current location z, add a footnote definition</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-footnote</span> <span class="p">[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">nid</span> <span class="nv">fid</span> <span class="nv">text</span><span class="p">])</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-footnote</span>
+  <span class="p">[[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">nid</span> <span class="nv">fid</span> <span class="nv">text</span><span class="p">]]</span>
+  <span class="p">(</span><span class="k">fn </span><span class="p">[]</span>
+    <span class="p">(</span><span class="nf">next-line</span>
+     <span class="nv">rest</span>
+     <span class="p">(</span><span class="nf">zip/append-child</span>
+      <span class="nv">z</span>
+      <span class="p">{</span><span class="ss">:type</span> <span class="ss">:footnote</span>
+       <span class="ss">:id</span> <span class="p">(</span><span class="nb">or </span><span class="nv">fid</span> <span class="nv">nid</span><span class="p">)</span>
+       <span class="ss">:content</span> <span class="p">(</span><span class="nf">orgmode.inline/parse-inline-elements</span> <span class="nv">text</span><span class="p">)}))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="move-level"><code>move-level</code><a class="headerlink" href="#move-level" title="Permanent link">&para;</a></h2>
+<p>Given level, move up z until the location is an appropiate place to
+  add elements at level.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">move-level</span> <span class="nv">z</span> <span class="nv">level</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">move-level</span>
+  <span class="p">[</span><span class="nv">z</span> <span class="nv">level</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">cnode</span> <span class="p">(</span><span class="nf">zip/node</span> <span class="nv">z</span><span class="p">)</span>
+        <span class="nv">clevel</span> <span class="p">(</span><span class="nb">get </span><span class="nv">cnode</span> <span class="ss">:level</span> <span class="nv">level</span><span class="p">)]</span>
+  <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">&gt; </span><span class="nv">level</span> <span class="nv">clevel</span><span class="p">)</span>
+    <span class="nv">z</span>
+    <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nf">zip/up</span> <span class="nv">z</span><span class="p">)</span> <span class="nv">level</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-headline"><code>parse-headline</code><a class="headerlink" href="#parse-headline" title="Permanent link">&para;</a></h2>
+<p>Insert a headline at z and make it the new location.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-headline</span> <span class="p">[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">stars</span> <span class="nv">todo</span> <span class="nv">headline</span> <span class="nv">tag</span><span class="p">])</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-headline</span>
+  <span class="p">[[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">stars</span> <span class="nv">todo</span> <span class="nv">headline</span> <span class="nv">tag</span><span class="p">]]</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">lvl</span> <span class="p">(</span><span class="nb">count </span><span class="nv">stars</span><span class="p">)</span>
+        <span class="nv">zz</span> <span class="p">(</span><span class="nf">move-level</span> <span class="nv">z</span> <span class="nv">lvl</span><span class="p">)]</span>
+  <span class="o">#</span><span class="p">(</span><span class="nf">next-line</span>
+    <span class="nv">rest</span>
+    <span class="p">(</span><span class="nb">-&gt; </span><span class="nv">zz</span>
+        <span class="p">(</span><span class="nf">zip/append-child</span> <span class="p">{</span><span class="ss">:type</span> <span class="ss">:headline</span>
+                           <span class="ss">:text</span> <span class="nv">headline</span>
+                           <span class="ss">:todo</span> <span class="nv">todo</span>
+                           <span class="ss">:level</span> <span class="nv">lvl</span>
+                           <span class="ss">:content</span> <span class="p">[]</span>
+                           <span class="ss">:tags</span> <span class="p">(</span><span class="nb">when </span><span class="nv">tag</span>
+                                   <span class="p">(</span><span class="nb">into </span><span class="o">#</span><span class="p">{}</span>
+                                         <span class="p">(</span><span class="nf">s/split</span> <span class="nv">tag</span> <span class="o">#</span><span class="s">&quot;:&quot;</span><span class="p">)))})</span>
+        <span class="nv">zip/down</span>
+        <span class="nv">zip/rightmost</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-property"><code>parse-property</code><a class="headerlink" href="#parse-property" title="Permanent link">&para;</a></h2>
+<p>Parse a property block, adding property keys and values until an
+   end tag is encountered</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-property</span> <span class="p">[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">parse-property</span> <span class="p">[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="nv">_</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-property</span>
+  <span class="p">([[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span><span class="p">]</span>
+     <span class="p">{</span><span class="ss">:pre</span> <span class="p">[(</span><span class="nb">= </span><span class="ss">:headline</span> <span class="p">(</span><span class="nb">-&gt; </span><span class="nv">z</span> <span class="nv">zip/node</span> <span class="p">(</span><span class="ss">:type</span><span class="p">)))]}</span>
+     <span class="p">(</span><span class="nf">handle-last-line</span>
+      <span class="p">[</span><span class="nv">line</span> <span class="nv">z</span><span class="p">]</span>
+      <span class="p">(</span><span class="nb">if-let </span><span class="p">[[</span><span class="nv">_</span> <span class="nv">prop</span> <span class="nv">value</span><span class="p">]</span>
+               <span class="p">(</span><span class="nb">re-matches </span><span class="nv">property-line-re</span> <span class="nv">line</span><span class="p">)]</span>
+        <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">= </span><span class="nv">prop</span> <span class="s">&quot;END&quot;</span><span class="p">)</span>
+          <span class="o">#</span><span class="p">(</span><span class="nf">next-line</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+          <span class="p">(</span><span class="k">fn </span><span class="p">[]</span> <span class="p">(</span><span class="nf">parse-property</span>
+                  <span class="nv">rest</span>
+                  <span class="p">(</span><span class="nf">zip/edit</span>
+                   <span class="nv">z</span>
+                   <span class="o">#</span><span class="p">(</span><span class="nf">assoc-in</span> <span class="nv">%</span> <span class="p">[</span><span class="ss">:properties</span> <span class="p">(</span><span class="nb">keyword </span><span class="p">(</span><span class="nf">.toLowerCase</span> <span class="nv">prop</span><span class="p">))]</span> <span class="nv">value</span><span class="p">)))))</span>
+        <span class="p">(</span><span class="nf">throw</span> <span class="p">(</span><span class="nf">Exception.</span>
+                <span class="p">(</span><span class="nb">str </span><span class="s">&quot;No :END: for propery block (looking at \&quot;&quot;</span>
+                     <span class="nv">line</span> <span class="s">&quot;\&quot;&quot;</span> <span class="p">))))))</span>
+  <span class="p">([[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="nv">_</span><span class="p">]</span> <span class="o">#</span><span class="p">(</span><span class="nf">parse-property</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-block"><code>parse-block</code><a class="headerlink" href="#parse-block" title="Permanent link">&para;</a></h2>
+<p>Parse a block structure, keeping attribues and adding lines until
+   an end tag is encountered</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-block</span> <span class="p">[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">parse-block</span> <span class="p">[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">type</span> <span class="nv">attribs</span><span class="p">])</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-block</span>
+  <span class="p">([[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span>  <span class="nv">z</span><span class="p">]</span>
+     <span class="p">(</span><span class="nf">handle-last-line</span>
+      <span class="p">[</span><span class="nv">line</span> <span class="nv">z</span><span class="p">]</span>
+      <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">type</span> <span class="p">(</span><span class="nb">name </span><span class="p">(</span><span class="ss">:block</span> <span class="p">(</span><span class="nf">zip/node</span> <span class="nv">z</span><span class="p">)))</span>
+            <span class="nv">end-re</span> <span class="p">(</span><span class="nb">re-pattern </span><span class="p">(</span><span class="nb">str </span><span class="nv">block-close-re</span> <span class="nv">type</span> <span class="o">#</span><span class="s">&quot;\s*&quot;</span><span class="p">))]</span>
+        <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">re-matches </span><span class="nv">end-re</span> <span class="nv">line</span><span class="p">)</span>
+          <span class="o">#</span><span class="p">(</span><span class="nf">next-line</span> <span class="nb">rest </span><span class="p">(</span><span class="nf">zip/up</span> <span class="nv">z</span><span class="p">))</span>
+          <span class="o">#</span><span class="p">(</span><span class="nf">parse-block</span> <span class="nb">rest </span><span class="p">(</span><span class="nf">zip/append-child</span> <span class="nv">z</span> <span class="nv">line</span><span class="p">))))))</span>
+  <span class="p">([[</span><span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">type</span> <span class="nv">attribs</span><span class="p">]]</span>
+     <span class="o">#</span><span class="p">(</span><span class="nf">parse-block</span>
+       <span class="nv">rest</span>
+       <span class="p">(</span><span class="nb">-&gt; </span><span class="nv">z</span>
+           <span class="p">(</span><span class="nf">zip/append-child</span> <span class="p">{</span><span class="ss">:type</span> <span class="ss">:block</span>
+                              <span class="ss">:block</span> <span class="p">(</span><span class="nb">keyword </span><span class="p">(</span><span class="nf">.toLowerCase</span> <span class="nv">type</span><span class="p">))</span>
+                              <span class="ss">:content</span> <span class="p">[]</span>
+                              <span class="ss">:attribs</span> <span class="p">(</span><span class="nb">when </span><span class="nv">attribs</span>
+                                         <span class="p">(</span><span class="nf">s/split</span> <span class="nv">attribs</span> <span class="o">#</span><span class="s">&quot;\s+&quot;</span><span class="p">))})</span>
+           <span class="nv">zip/down</span>
+           <span class="nv">zip/rightmost</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="enclosing-plain-list"><code>enclosing-plain-list</code><a class="headerlink" href="#enclosing-plain-list" title="Permanent link">&para;</a></h2>
+<p>Move z up to appropiate level enclosing the current list</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">enclosing-plain-list</span> <span class="nv">z</span> <span class="nv">level</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">enclosing-plain-list</span>
+  <span class="p">[</span><span class="nv">z</span> <span class="nv">level</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">or </span><span class="p">(</span><span class="nb">not= </span><span class="ss">:list</span> <span class="p">(</span><span class="ss">:type</span> <span class="p">(</span><span class="nf">zip/node</span> <span class="nv">z</span><span class="p">)))</span>
+          <span class="p">(</span><span class="nb">= </span><span class="nv">level</span> <span class="p">(</span><span class="ss">:listlevel</span> <span class="p">(</span><span class="nf">zip/node</span> <span class="nv">z</span><span class="p">))))</span>
+    <span class="nv">z</span>
+    <span class="p">(</span><span class="nf">recur</span> <span class="p">(</span><span class="nf">zip/up</span> <span class="nv">z</span><span class="p">)</span> <span class="nv">level</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-plain-list"><code>parse-plain-list</code><a class="headerlink" href="#parse-plain-list" title="Permanent link">&para;</a></h2>
+<p>Parse a plain list, keeping track of any nested heirarchy.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-plain-list</span> <span class="p">[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nb">rest </span><span class="ss">:as</span> <span class="nv">lines</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">lvl</span> <span class="nv">idx</span> <span class="nv">text</span> <span class="ss">:as</span> <span class="nv">params</span><span class="p">])</span>
+<span class="p">(</span><span class="nf">parse-plain-list</span> <span class="p">[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nb">rest </span><span class="ss">:as</span> <span class="nv">lines</span><span class="p">]</span> <span class="nv">z</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-plain-list</span>
+  <span class="p">([[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nb">rest </span><span class="ss">:as</span> <span class="nv">lines</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">lvl</span> <span class="nv">idx</span> <span class="nv">text</span> <span class="ss">:as</span> <span class="nv">params</span><span class="p">]]</span>
+     <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">level</span> <span class="p">(</span><span class="nb">+ </span><span class="p">(</span><span class="nb">count </span><span class="nv">lvl</span><span class="p">)</span> <span class="p">(</span><span class="nb">count </span><span class="nv">idx</span><span class="p">))</span>
+           <span class="nv">listtype</span> <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">re-find </span><span class="o">#</span><span class="s">&quot;^[0-9]+&quot;</span> <span class="nv">idx</span><span class="p">)</span> <span class="ss">:ol</span> <span class="ss">:ul</span><span class="p">)]</span>
+       <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">= </span><span class="ss">:list</span> <span class="p">(</span><span class="ss">:type</span> <span class="p">(</span><span class="nf">zip/node</span> <span class="nv">z</span><span class="p">)))</span>
+         <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">= </span><span class="nv">level</span> <span class="p">(</span><span class="ss">:listlevel</span> <span class="p">(</span><span class="nf">zip/node</span> <span class="nv">z</span><span class="p">)))</span>
+           <span class="p">(</span><span class="nf">parse-plain-list</span>
+            <span class="nv">lines</span>
+            <span class="p">(</span><span class="nf">zip/append-child</span> <span class="nv">z</span>
+                              <span class="p">{</span><span class="ss">:type</span> <span class="ss">:listitem</span>
+                               <span class="ss">:content</span> <span class="p">(</span><span class="nf">orgmode.inline/parse-inline-elements</span> <span class="nv">text</span><span class="p">)}))</span>
+           <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">&gt; </span><span class="nv">level</span> <span class="p">(</span><span class="ss">:listlevel</span> <span class="p">(</span><span class="nf">zip/node</span> <span class="nv">z</span><span class="p">)))</span>
+             <span class="p">(</span><span class="nf">parse-plain-list</span>
+              <span class="nv">lines</span>
+              <span class="p">(</span><span class="nb">-&gt; </span><span class="nv">z</span>
+                  <span class="p">(</span><span class="nf">zip/down</span><span class="p">)</span>
+                  <span class="p">(</span><span class="nf">zip/append-child</span> <span class="p">{</span><span class="ss">:type</span> <span class="ss">:list</span>
+                                     <span class="ss">:listlevel</span> <span class="nv">level</span>
+                                     <span class="ss">:listtype</span> <span class="nv">listtype</span>
+                                     <span class="ss">:content</span> <span class="p">[{</span><span class="ss">:type</span> <span class="ss">:listitem</span>
+                                                <span class="ss">:content</span> <span class="p">(</span><span class="nf">orgmode.inline/parse-inline-elements</span> <span class="nv">text</span><span class="p">)}]})</span>
+                  <span class="p">(</span><span class="nf">zip/down</span><span class="p">)</span>
+                  <span class="p">(</span><span class="nf">zip/rightmost</span><span class="p">)))</span>
+             <span class="p">(</span><span class="nf">parse-plain-list</span>
+              <span class="nv">lines</span>
+              <span class="p">(</span><span class="nf">enclosing-plain-list</span> <span class="nv">z</span> <span class="nv">level</span><span class="p">)</span>
+              <span class="nv">params</span><span class="p">)))</span>
+         <span class="p">(</span><span class="nf">parse-plain-list</span>
+          <span class="nv">lines</span>
+          <span class="p">(</span><span class="nb">-&gt; </span><span class="nv">z</span>
+              <span class="p">(</span><span class="nf">zip/append-child</span> <span class="p">{</span><span class="ss">:type</span> <span class="ss">:list</span>
+                                 <span class="ss">:listlevel</span> <span class="nv">level</span>
+                                 <span class="ss">:listtype</span> <span class="nv">listtype</span>
+                                 <span class="ss">:content</span> <span class="p">[{</span><span class="ss">:type</span> <span class="ss">:listitem</span>
+                                            <span class="ss">:content</span> <span class="p">(</span><span class="nf">orgmode.inline/parse-inline-elements</span> <span class="nv">text</span><span class="p">)}]})</span>
+              <span class="p">(</span><span class="nf">zip/down</span><span class="p">)</span>
+              <span class="p">(</span><span class="nf">zip/rightmost</span><span class="p">))))))</span>
+  <span class="p">([[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nb">rest </span><span class="ss">:as</span> <span class="nv">lines</span><span class="p">]</span> <span class="nv">z</span><span class="p">]</span>
+     <span class="p">(</span><span class="nf">handle-last-line</span>
+      <span class="p">[</span><span class="nv">line</span> <span class="nv">z</span><span class="p">]</span>
+      <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">indent-re</span> <span class="p">(</span><span class="nf">re-pattern</span>
+                       <span class="p">(</span><span class="nf">format</span> <span class="s">&quot;(\\s{%d,})(.*)&quot;</span>
+                               <span class="p">(</span><span class="ss">:listlevel</span> <span class="p">(</span><span class="nf">zip/node</span> <span class="nv">z</span><span class="p">))))]</span>
+        <span class="p">(</span><span class="nf">condp</span> <span class="nb">re-matches </span><span class="nv">line</span>
+          <span class="nv">plain-list-re</span> <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-plain-list</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+          <span class="nv">indent-re</span>         <span class="ss">:&gt;&gt;</span> <span class="o">#</span><span class="p">(</span><span class="nf">parse-plain-list</span>
+                                  <span class="nv">rest</span>
+                                  <span class="p">(</span><span class="nb">-&gt; </span><span class="nv">z</span>
+                                      <span class="p">(</span><span class="nf">zip/down</span><span class="p">)</span>
+                                      <span class="p">(</span><span class="nf">zip/append-child</span> <span class="nv">%1</span><span class="p">)</span>
+                                      <span class="p">(</span><span class="nf">zip/up</span><span class="p">)))</span>
+          <span class="p">(</span><span class="nf">next-line</span> <span class="nv">lines</span> <span class="p">(</span><span class="nf">zip/up</span> <span class="nv">z</span><span class="p">)))))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="append-table-line"><code>append-table-line</code><a class="headerlink" href="#append-table-line" title="Permanent link">&para;</a></h2>
+<p>Append table row s to location z. Splits s into fields</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">append-table-line</span> <span class="nv">z</span> <span class="nv">s</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">append-table-line</span>
+  <span class="p">[</span><span class="nv">z</span> <span class="nv">s</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">row</span> <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">re-matches </span><span class="o">#</span><span class="s">&quot;[-+]+\|?&quot;</span> <span class="nv">s</span><span class="p">)</span>
+              <span class="ss">:tline</span>
+              <span class="p">(</span><span class="nb">map </span><span class="nv">s/trim</span> <span class="p">(</span><span class="nf">s/split</span> <span class="nv">s</span> <span class="o">#</span><span class="s">&quot;\|&quot;</span><span class="p">)))]</span>
+    <span class="p">(</span><span class="nf">zip/edit</span> <span class="nv">z</span>
+              <span class="o">#</span><span class="p">(</span><span class="nf">update-in</span> <span class="nv">%</span> <span class="p">[</span><span class="ss">:rows</span><span class="p">]</span> <span class="nb">conj </span><span class="nv">row</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="add-table-formula"><code>add-table-formula</code><a class="headerlink" href="#add-table-formula" title="Permanent link">&para;</a></h2>
+<p>Add table formula at z, splitting s into separate formulas.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">add-table-formula</span> <span class="nv">z</span> <span class="nv">s</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">add-table-formula</span>
+  <span class="p">[</span><span class="nv">z</span> <span class="nv">s</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">zip/edit</span> <span class="nv">z</span>
+       <span class="o">#</span><span class="p">(</span><span class="nf">update-in</span> <span class="nv">%</span> <span class="p">[</span><span class="ss">:formulas</span><span class="p">]</span> <span class="p">(</span><span class="nf">s/split</span> <span class="nv">s</span> <span class="o">#</span><span class="s">&quot;::&quot;</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-table"><code>parse-table</code><a class="headerlink" href="#parse-table" title="Permanent link">&para;</a></h2>
+<p>Parse a table to add at location z</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-table</span> <span class="p">[</span><span class="o">&amp;</span> <span class="nv">lines</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">tblline</span><span class="p">])</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-table</span>
+  <span class="p">[[</span><span class="o">&amp;</span> <span class="nv">lines</span><span class="p">]</span> <span class="nv">z</span> <span class="p">[</span><span class="nv">_</span> <span class="nv">tblline</span><span class="p">]]</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">fields</span> <span class="p">(</span><span class="nb">map </span><span class="nv">s/trim</span> <span class="p">(</span><span class="nf">s/split</span> <span class="nv">tblline</span> <span class="o">#</span><span class="s">&quot;\|&quot;</span><span class="p">))</span>
+        <span class="nv">z</span><span class="o">&#39;</span> <span class="p">(</span><span class="nb">-&gt; </span><span class="nv">z</span>
+               <span class="p">(</span><span class="nf">zip/append-child</span> <span class="p">{</span><span class="ss">:type</span> <span class="ss">:table</span>
+                                  <span class="ss">:content</span> <span class="p">[]</span>
+                                  <span class="ss">:rows</span> <span class="p">[</span><span class="nv">fields</span><span class="p">]})</span>
+               <span class="p">(</span><span class="nf">zip/down</span><span class="p">)</span>
+               <span class="p">(</span><span class="nf">zip/rightmost</span><span class="p">))]</span>
+     <span class="p">(</span><span class="k">loop </span><span class="p">[</span><span class="nv">ls</span> <span class="nv">lines</span>
+            <span class="nv">z</span><span class="o">&#39;&#39;</span> <span class="nv">z</span><span class="o">&#39;</span><span class="p">]</span>
+       <span class="p">(</span><span class="nf">handle-last-line</span>
+        <span class="p">[(</span><span class="nb">first </span><span class="nv">ls</span><span class="p">)</span> <span class="nv">z</span><span class="o">&#39;&#39;</span><span class="p">]</span>
+        <span class="p">(</span><span class="nb">if-let </span><span class="p">[[</span><span class="nv">_</span> <span class="nv">l</span><span class="p">]</span> <span class="p">(</span><span class="nb">re-matches </span><span class="nv">table-re</span> <span class="p">(</span><span class="nb">first </span><span class="nv">ls</span><span class="p">))]</span>
+          <span class="p">(</span><span class="nf">recur</span>
+           <span class="p">(</span><span class="nb">rest </span><span class="nv">ls</span><span class="p">)</span>
+           <span class="p">(</span><span class="nf">append-table-line</span> <span class="nv">z</span><span class="o">&#39;&#39;</span> <span class="nv">l</span><span class="p">))</span>
+          <span class="p">(</span><span class="nb">if-let </span><span class="p">[[</span><span class="nv">_</span> <span class="nv">f</span><span class="p">]</span> <span class="p">(</span><span class="nb">re-matches </span><span class="nv">table-formula-re</span>
+                                     <span class="p">(</span><span class="nb">first </span><span class="nv">ls</span><span class="p">))]</span>
+            <span class="p">(</span><span class="nf">next-line</span>
+             <span class="p">(</span><span class="nb">rest </span><span class="nv">ls</span><span class="p">)</span>
+             <span class="p">(</span><span class="nf">add-table-formula</span> <span class="nv">z</span><span class="o">&#39;&#39;</span> <span class="nv">f</span><span class="p">))</span>
+            <span class="p">(</span><span class="nf">next-line</span> <span class="nv">ls</span> <span class="p">(</span><span class="nf">zip/up</span> <span class="nv">z</span><span class="o">&#39;&#39;</span><span class="p">))))))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="add-line-element"><code>add-line-element</code><a class="headerlink" href="#add-line-element" title="Permanent link">&para;</a></h2>
+<p>Parse line for inline elements and add sequence at z.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">add-line-element</span> <span class="nv">lines</span> <span class="nv">z</span> <span class="nv">line</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">add-line-element</span>
+  <span class="p">[</span><span class="nv">lines</span> <span class="nv">z</span> <span class="nv">line</span><span class="p">]</span>
+  <span class="o">#</span><span class="p">(</span><span class="nf">next-line</span>
+    <span class="nv">lines</span>
+    <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">re-matches </span><span class="o">#</span><span class="s">&quot;\s*&quot;</span> <span class="nv">line</span><span class="p">)</span>
+      <span class="p">(</span><span class="nb">-&gt; </span><span class="nv">z</span>
+          <span class="p">(</span><span class="nf">zip/append-child</span> <span class="p">{</span><span class="ss">:type</span> <span class="ss">:p</span>
+                             <span class="ss">:content</span> <span class="p">[]})</span>
+          <span class="p">(</span><span class="nf">zip/down</span><span class="p">)</span>
+          <span class="p">(</span><span class="nf">zip/rightmost</span><span class="p">))</span>
+      <span class="p">(</span><span class="nf">reduce</span>
+       <span class="nv">zip/append-child</span>
+       <span class="nv">z</span>
+       <span class="p">(</span><span class="nf">orgmode.inline/parse-inline-elements</span> <span class="nv">line</span><span class="p">)))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="next-line_1"><code>next-line</code><a class="headerlink" href="#next-line_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">next-line</span> <span class="p">[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">next-line</span> <span class="p">[[</span><span class="nv">line</span> <span class="o">&amp;</span> <span class="nv">rest</span><span class="p">]</span> <span class="nv">z</span><span class="p">]</span>
+  <span class="s">&quot;Process each line with the list of block element parsers. Return</span>
+<span class="s">   the root of the created zipper structure&quot;</span>
+  <span class="p">(</span><span class="nf">handle-last-line</span>
+   <span class="p">[</span><span class="nv">line</span> <span class="nv">z</span><span class="p">]</span>
+   <span class="p">(</span><span class="nf">condp</span> <span class="nb">re-matches </span><span class="nv">line</span>
+     <span class="nv">block-open-re</span>   <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-block</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+     <span class="nv">attrib-re</span>       <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-attrib</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+     <span class="nv">headline-re</span>     <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-headline</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+     <span class="nv">prop-open-re</span>    <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-property</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+     <span class="nv">plain-list-re</span>   <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-plain-list</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+     <span class="nv">table-re</span>        <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-table</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+     <span class="nv">footnote-def-re</span> <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-footnote</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+     <span class="nv">comment-re</span>      <span class="ss">:&gt;&gt;</span> <span class="p">(</span><span class="nb">partial </span><span class="nv">parse-comment</span> <span class="nb">rest </span><span class="nv">z</span><span class="p">)</span>
+     <span class="p">(</span><span class="nf">add-line-element</span> <span class="nb">rest </span><span class="nv">z</span> <span class="nv">line</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-lines"><code>parse-lines</code><a class="headerlink" href="#parse-lines" title="Permanent link">&para;</a></h2>
+<p>Parse coll as org-mode formatting</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-lines</span> <span class="nv">coll</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-lines</span>
+  <span class="p">[</span><span class="nv">coll</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nb">root </span><span class="p">(</span><span class="nf">clojure.zip/xml-zip</span> <span class="p">{</span><span class="ss">:level</span> <span class="mi">0</span><span class="p">})]</span>
+    <span class="p">(</span><span class="nf">trampoline</span> <span class="nv">next-line</span> <span class="nv">coll</span> <span class="nv">root</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../.." title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../core-test/" title="orgmode.core-test" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                orgmode.core-test
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.83fe6e3c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7e1cb91c.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,671 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.4">
+    
+    
+      
+        <title>Inline - Orgmode</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4007cdc.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.8435c73a.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ef5350">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="red" data-md-color-accent="">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#inline-element-formatting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Orgmode" class="md-header-nav__button md-logo" aria-label="Orgmode">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Orgmode
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Inline
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/davidpham87/orgmode/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Orgmode" class="md-nav__button md-logo" aria-label="Orgmode">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Orgmode
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/davidpham87/orgmode/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Orgmode
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Orgmode" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Orgmode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../block/" title="Block" class="md-nav__link">
+      Block
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../core-test/" title="orgmode.core-test" class="md-nav__link">
+      orgmode.core-test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../core/" title="Core" class="md-nav__link">
+      Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../html/" title="Html" class="md-nav__link">
+      Html
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../inline-test/" title="orgmode.inline-test" class="md-nav__link">
+      orgmode.inline-test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Inline" class="md-nav__link md-nav__link--active">
+      Inline
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../util/" title="orgmode.util" class="md-nav__link">
+      orgmode.util
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/davidpham87/orgmode/edit/master/doc/orgmode/inline.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h2 id="inline-element-formatting">Inline Element Formatting<a class="headerlink" href="#inline-element-formatting" title="Permanent link">&para;</a></h2>
+<p>Aside from the block elements handled in the core, there are
+particular elements withing text that have meaning. There are
+roughly two types of elements: links and formatting.</p>
+<h1 id="orgmodeinline">orgmode.inline<a class="headerlink" href="#orgmodeinline" title="Permanent link">&para;</a></h1>
+<details class="tip"><summary>(ns)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">ns </span><span class="nv">orgmode.inline</span>
+  <span class="p">(</span><span class="ss">:require</span> <span class="p">[</span><span class="nv">clojure.string</span> <span class="ss">:as</span> <span class="nv">s</span><span class="p">]))</span>
+</code></pre></div>
+
+</details>
+<h3 id="link-elements">Link Elements<a class="headerlink" href="#link-elements" title="Permanent link">&para;</a></h3>
+<h2 id="link-re"><code>link-re</code><a class="headerlink" href="#link-re" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">link-re</span> <span class="o">#</span><span class="s">&quot;\[\[([^\]]+)(?:\]\[([^\]]+))?\]\]&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="link-create"><code>link-create</code><a class="headerlink" href="#link-create" title="Permanent link">&para;</a></h2>
+<p>Create hyperlink structures from a list of regex matches</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">link-create</span> <span class="nv">coll</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">link-create</span>
+  <span class="p">[</span><span class="nv">coll</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">for </span><span class="p">[[</span><span class="nv">_</span> <span class="nv">link</span> <span class="nv">text</span> <span class="p">]</span> <span class="nv">coll</span><span class="p">]</span>
+    <span class="p">{</span><span class="ss">:type</span> <span class="ss">:link</span>
+     <span class="ss">:uri</span> <span class="nv">link</span>
+     <span class="ss">:content</span> <span class="p">[(</span><span class="nb">or </span><span class="nv">text</span> <span class="nv">link</span><span class="p">)]}))</span>
+</code></pre></div>
+
+</details>
+<h2 id="footnote-re"><code>footnote-re</code><a class="headerlink" href="#footnote-re" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">footnote-re</span> <span class="o">#</span><span class="s">&quot;\[(\d+|fn:(.*))\]&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="footnote-create"><code>footnote-create</code><a class="headerlink" href="#footnote-create" title="Permanent link">&para;</a></h2>
+<p>Creates footnote structures from a list of regex matches</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">footnote-create</span> <span class="nv">coll</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">footnote-create</span>
+  <span class="p">[</span><span class="nv">coll</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">for </span><span class="p">[[</span><span class="nv">_</span> <span class="nb">ref </span><span class="nv">name</span><span class="p">]</span> <span class="nv">coll</span><span class="p">]</span>
+    <span class="p">{</span><span class="ss">:type</span> <span class="ss">:footnote-ref</span>
+     <span class="ss">:id</span>   <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">nil? </span><span class="nv">name</span><span class="p">)</span>
+             <span class="nb">ref </span><span class="nv">name</span><span class="p">)}))</span>
+</code></pre></div>
+
+</details>
+<h2 id="target-re"><code>target-re</code><a class="headerlink" href="#target-re" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">target-re</span> <span class="o">#</span><span class="s">&quot;&lt;&lt;\s*([^&gt;]*?)\s*&gt;&gt;&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="target-create"><code>target-create</code><a class="headerlink" href="#target-create" title="Permanent link">&para;</a></h2>
+<p>Creates target structures from a list of regex matches</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">target-create</span> <span class="nv">tgts</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">target-create</span>
+  <span class="p">[</span><span class="nv">tgts</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">for </span><span class="p">[[</span><span class="nv">_</span> <span class="nv">lbl</span><span class="p">]</span> <span class="nv">tgts</span><span class="p">]</span>
+    <span class="p">{</span><span class="ss">:type</span> <span class="ss">:target</span>
+     <span class="ss">:id</span> <span class="nv">lbl</span><span class="p">}))</span>
+</code></pre></div>
+
+</details>
+<h3 id="timestamp-elements">Timestamp Elements<a class="headerlink" href="#timestamp-elements" title="Permanent link">&para;</a></h3>
+<h2 id="ts-base"><code>ts-base</code><a class="headerlink" href="#ts-base" title="Permanent link">&para;</a></h2>
+<p>hack to make it work with ranges</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">ts-base</span>
+  <span class="o">#</span><span class="s">&quot;(\d{4})-(\d{2})-(\d{2}) (\w{3})(?: (\d{1,2}):(\d{2})(-(\d{1,2}):(\d{2})|.*)?)?&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="ts-active-re"><code>ts-active-re</code><a class="headerlink" href="#ts-active-re" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">ts-active-re</span>
+  <span class="p">(</span><span class="nb">re-pattern </span><span class="p">(</span><span class="nb">str </span><span class="s">&quot;&lt;&quot;</span> <span class="nv">ts-base</span> <span class="s">&quot;&gt;&quot;</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="ts-active-create"><code>ts-active-create</code><a class="headerlink" href="#ts-active-create" title="Permanent link">&para;</a></h2>
+<p>Creates active timestamps from a list of regex matches</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">ts-active-create</span> <span class="nv">coll</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">ts-active-create</span>
+  <span class="p">[</span><span class="nv">coll</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">for </span><span class="p">[[</span><span class="nv">_</span> <span class="nv">Y</span> <span class="nv">M</span> <span class="nv">D</span> <span class="nv">d</span> <span class="nv">h</span> <span class="nv">m</span> <span class="nv">_</span> <span class="nv">Eh</span> <span class="nv">Em</span><span class="p">]</span> <span class="nv">coll</span><span class="p">]</span>
+    <span class="p">(</span><span class="nf">cond-&gt;</span> <span class="p">{</span><span class="ss">:type</span> <span class="ss">:timestamp</span>
+             <span class="ss">:timetype</span> <span class="ss">:active</span>
+             <span class="ss">:year</span> <span class="nv">Y</span>
+             <span class="ss">:month</span> <span class="nv">M</span>
+             <span class="ss">:day</span> <span class="nv">D</span>
+             <span class="ss">:dayname</span> <span class="nv">d</span>
+             <span class="ss">:hour</span> <span class="nv">h</span>
+             <span class="ss">:minute</span> <span class="nv">m</span><span class="p">}</span>
+      <span class="p">(</span><span class="nb">and </span><span class="nv">Eh</span> <span class="nv">Em</span><span class="p">)</span> <span class="p">(</span><span class="nb">merge </span><span class="p">{</span><span class="ss">:end-hour</span> <span class="nv">Eh</span> <span class="ss">:end-minute</span> <span class="nv">Em</span><span class="p">})</span>
+      <span class="ss">:always</span> <span class="nv">or</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="ts-inactive-re"><code>ts-inactive-re</code><a class="headerlink" href="#ts-inactive-re" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">ts-inactive-re</span>
+  <span class="p">(</span><span class="nb">re-pattern </span><span class="p">(</span><span class="nb">str </span><span class="s">&quot;\\[&quot;</span> <span class="nv">ts-base</span> <span class="s">&quot;\\]&quot;</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="ts-inactive-create"><code>ts-inactive-create</code><a class="headerlink" href="#ts-inactive-create" title="Permanent link">&para;</a></h2>
+<p>Create inactive timestamps from a list of regex matches</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">ts-inactive-create</span> <span class="nv">coll</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">ts-inactive-create</span>
+  <span class="p">[</span><span class="nv">coll</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">map </span><span class="o">#</span><span class="p">(</span><span class="nb">assoc </span><span class="nv">%</span> <span class="ss">:timetype</span> <span class="ss">:inactive</span><span class="p">)</span>
+       <span class="p">(</span><span class="nf">ts-active-create</span> <span class="nv">coll</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="ts-range-re"><code>ts-range-re</code><a class="headerlink" href="#ts-range-re" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">ts-range-re</span>
+  <span class="p">(</span><span class="nb">re-pattern </span><span class="p">(</span><span class="nb">str </span><span class="nv">ts-active-re</span> <span class="s">&quot;--&quot;</span> <span class="nv">ts-active-re</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="ts-range-create"><code>ts-range-create</code><a class="headerlink" href="#ts-range-create" title="Permanent link">&para;</a></h2>
+<p>Create timestamp ranges from a list of regex matches</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">ts-range-create</span> <span class="nv">coll</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">ts-range-create</span>
+  <span class="p">[</span><span class="nv">coll</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">for </span><span class="p">[[</span><span class="nv">_</span> <span class="nv">BY</span> <span class="nv">BM</span> <span class="nv">BD</span> <span class="nv">Bd</span> <span class="nv">Bh</span> <span class="nv">Bm</span> <span class="nv">_</span> <span class="nv">_</span>
+         <span class="nv">_</span> <span class="nv">EY</span> <span class="nv">EM</span> <span class="nv">ED</span> <span class="nv">Ed</span> <span class="nv">Eh</span> <span class="nv">Em</span> <span class="nv">_</span> <span class="nv">_</span><span class="p">]</span> <span class="nv">coll</span><span class="p">]</span>
+    <span class="p">{</span><span class="ss">:type</span> <span class="ss">:timestamp</span>
+     <span class="ss">:timetype</span> <span class="ss">:range</span>
+     <span class="ss">:year</span>    <span class="nv">BY</span>
+     <span class="ss">:month</span>   <span class="nv">BM</span>
+     <span class="ss">:day</span>     <span class="nv">BD</span>
+     <span class="ss">:dayname</span> <span class="nv">Bd</span>
+     <span class="ss">:hour</span>    <span class="nv">Bh</span>
+     <span class="ss">:minute</span>  <span class="nv">Bm</span>
+     <span class="ss">:end-year</span>    <span class="nv">EY</span>
+     <span class="ss">:end-month</span>   <span class="nv">EM</span>
+     <span class="ss">:end-day</span>     <span class="nv">ED</span>
+     <span class="ss">:end-dayname</span> <span class="nv">Ed</span>
+     <span class="ss">:end-hour</span>    <span class="nv">Eh</span>
+     <span class="ss">:end-minute</span>  <span class="nv">Em</span><span class="p">}))</span>
+</code></pre></div>
+
+</details>
+<h3 id="formatting-elements">Formatting Elements<a class="headerlink" href="#formatting-elements" title="Permanent link">&para;</a></h3>
+<h2 id="fmt-create"><code>fmt-create</code><a class="headerlink" href="#fmt-create" title="Permanent link">&para;</a></h2>
+<p>Generic function to create a format element from given type</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">fmt-create</span> <span class="nv">type</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">fmt-create</span>
+  <span class="p">[</span><span class="nv">type</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">ts</span><span class="p">]</span>
+    <span class="p">(</span><span class="nb">for </span><span class="p">[[</span><span class="nv">_</span> <span class="nv">t</span><span class="p">]</span> <span class="nv">ts</span><span class="p">]</span>
+      <span class="p">{</span><span class="ss">:type</span> <span class="nv">type</span>
+       <span class="ss">:content</span> <span class="p">[</span><span class="nv">t</span><span class="p">]})))</span>
+</code></pre></div>
+
+</details>
+<h2 id="fmt-re"><code>fmt-re</code><a class="headerlink" href="#fmt-re" title="Permanent link">&para;</a></h2>
+<p>Create a re-pattern to match the given delimiter s</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">fmt-re</span> <span class="nv">s</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">fmt-re</span>
+  <span class="p">[</span><span class="nv">s</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">re-pattern </span><span class="p">(</span><span class="nb">str </span><span class="nv">s</span> <span class="o">#</span><span class="s">&quot;(\S(?:.*?\S)??)&quot;</span> <span class="nv">s</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="re-interleave"><code>re-interleave</code><a class="headerlink" href="#re-interleave" title="Permanent link">&para;</a></h2>
+<p>Split l with on re, interleave this list with the inline elements
+  constructed from ms using cfn</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">re-interleave</span> <span class="nv">re</span> <span class="nv">l</span> <span class="nv">cfn</span> <span class="nv">ms</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">re-interleave</span>
+  <span class="p">[</span><span class="nv">re</span> <span class="nv">l</span> <span class="nv">cfn</span> <span class="nv">ms</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">ls</span>  <span class="p">(</span><span class="nf">s/split</span> <span class="nv">l</span> <span class="nv">re</span><span class="p">)</span>
+        <span class="nv">els</span> <span class="p">(</span><span class="nf">vec</span> <span class="p">(</span><span class="nb">map </span><span class="o">#</span><span class="p">(</span><span class="nb">assoc </span><span class="nv">%</span> <span class="ss">:inline</span> <span class="nv">true</span><span class="p">)</span> <span class="p">(</span><span class="nf">cfn</span> <span class="nv">ms</span><span class="p">)))]</span>
+    <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nf">empty?</span> <span class="nv">ls</span><span class="p">)</span>
+      <span class="nv">els</span>
+      <span class="p">(</span><span class="nf">vec</span>
+       <span class="p">(</span><span class="nb">interleave </span><span class="nv">ls</span> <span class="p">(</span><span class="nb">conj </span><span class="nv">els</span> <span class="p">{</span><span class="ss">:inline</span> <span class="nv">true</span> <span class="ss">:type</span> <span class="ss">:comment</span> <span class="ss">:text</span> <span class="s">&quot;FIX INTERLEAVING&quot;</span><span class="p">}))))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="make-elem"><code>make-elem</code><a class="headerlink" href="#make-elem" title="Permanent link">&para;</a></h2>
+<p>Try to make any inline elements out of strings in coll using re and
+  cstor to match and construct these elements</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">make-elem</span> <span class="nv">coll</span> <span class="nv">re</span> <span class="nv">cstor</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">make-elem</span>
+  <span class="p">[</span><span class="nv">coll</span> <span class="nv">re</span> <span class="nv">cstor</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">flatten</span>
+   <span class="p">(</span><span class="nb">for </span><span class="p">[</span><span class="nv">elem</span> <span class="nv">coll</span><span class="p">]</span>
+     <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">string? </span><span class="nv">elem</span><span class="p">)</span>
+       <span class="p">(</span><span class="nb">if-let </span><span class="p">[</span><span class="nv">ms</span> <span class="p">(</span><span class="nb">re-seq </span><span class="nv">re</span> <span class="nv">elem</span><span class="p">)]</span>
+         <span class="p">(</span><span class="nf">re-interleave</span> <span class="nv">re</span> <span class="nv">elem</span> <span class="nv">cstor</span> <span class="nv">ms</span><span class="p">)</span>
+         <span class="nv">elem</span><span class="p">)</span>
+       <span class="nv">elem</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="parse-inline-elements"><code>parse-inline-elements</code><a class="headerlink" href="#parse-inline-elements" title="Permanent link">&para;</a></h2>
+<p>Takes line and breaks it into inline elements and interleaving
+  text</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">parse-inline-elements</span> <span class="nv">line</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">parse-inline-elements</span>
+  <span class="p">[</span><span class="nv">line</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">-&gt; </span><span class="p">[</span><span class="nv">line</span><span class="p">]</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="nv">link-re</span>        <span class="nv">link-create</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="nv">footnote-re</span>    <span class="nv">footnote-create</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="nv">target-re</span>      <span class="nv">target-create</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="nv">ts-range-re</span>    <span class="nv">ts-range-create</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="nv">ts-active-re</span>   <span class="nv">ts-active-create</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="nv">ts-inactive-re</span> <span class="nv">ts-inactive-create</span><span class="p">)</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="p">(</span><span class="nf">fmt-re</span> <span class="s">&quot;\\*&quot;</span><span class="p">)</span> <span class="p">(</span><span class="nf">fmt-create</span> <span class="ss">:bold</span><span class="p">))</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="p">(</span><span class="nf">fmt-re</span> <span class="s">&quot;/&quot;</span><span class="p">)</span>   <span class="p">(</span><span class="nf">fmt-create</span> <span class="ss">:italic</span><span class="p">))</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="p">(</span><span class="nf">fmt-re</span> <span class="s">&quot;\\+&quot;</span><span class="p">)</span>   <span class="p">(</span><span class="nf">fmt-create</span> <span class="ss">:strike-through</span><span class="p">))</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="p">(</span><span class="nf">fmt-re</span> <span class="s">&quot;_&quot;</span><span class="p">)</span>   <span class="p">(</span><span class="nf">fmt-create</span> <span class="ss">:underline</span><span class="p">))</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="p">(</span><span class="nf">fmt-re</span> <span class="s">&quot;=&quot;</span><span class="p">)</span>   <span class="p">(</span><span class="nf">fmt-create</span> <span class="ss">:verbatim</span><span class="p">))</span>
+      <span class="p">(</span><span class="nf">make-elem</span> <span class="p">(</span><span class="nf">fmt-re</span> <span class="s">&quot;~&quot;</span><span class="p">)</span>   <span class="p">(</span><span class="nf">fmt-create</span> <span class="ss">:code</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../inline-test/" title="orgmode.inline-test" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                orgmode.inline-test
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../util/" title="orgmode.util" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                orgmode.util
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.83fe6e3c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7e1cb91c.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>

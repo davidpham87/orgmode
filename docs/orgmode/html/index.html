@@ -1,0 +1,748 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.4">
+    
+    
+      
+        <title>Html - Orgmode</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4007cdc.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.8435c73a.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ef5350">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="red" data-md-color-accent="">
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#html-output" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Orgmode" class="md-header-nav__button md-logo" aria-label="Orgmode">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Orgmode
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Html
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/davidpham87/orgmode/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Orgmode" class="md-nav__button md-logo" aria-label="Orgmode">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    Orgmode
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/davidpham87/orgmode/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Orgmode
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Orgmode" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Orgmode
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../block/" title="Block" class="md-nav__link">
+      Block
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../core-test/" title="orgmode.core-test" class="md-nav__link">
+      orgmode.core-test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../core/" title="Core" class="md-nav__link">
+      Core
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Html" class="md-nav__link md-nav__link--active">
+      Html
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../inline-test/" title="orgmode.inline-test" class="md-nav__link">
+      orgmode.inline-test
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../inline/" title="Inline" class="md-nav__link">
+      Inline
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../util/" title="orgmode.util" class="md-nav__link">
+      orgmode.util
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/davidpham87/orgmode/edit/master/doc/orgmode/html.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h2 id="html-output">HTML output<a class="headerlink" href="#html-output" title="Permanent link">&para;</a></h2>
+<p>Functions to facilitate HTML output</p>
+<h1 id="orgmodehtml">orgmode.html<a class="headerlink" href="#orgmodehtml" title="Permanent link">&para;</a></h1>
+<details class="tip"><summary>(ns)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">ns </span><span class="nv">orgmode.html</span>
+  <span class="p">(</span><span class="ss">:require</span> <span class="p">[</span><span class="nv">hiccup.core</span> <span class="ss">:only</span> <span class="p">[</span><span class="nv">html</span><span class="p">]]</span>
+            <span class="p">[</span><span class="nv">clojure.walk</span> <span class="ss">:as</span> <span class="nv">w</span><span class="p">]</span>
+            <span class="p">[</span><span class="nv">clojure.string</span> <span class="ss">:as</span> <span class="nv">t</span><span class="p">])</span>
+  <span class="p">(</span><span class="ss">:import</span> <span class="p">[</span><span class="nv">org.apache.commons.lang3</span> <span class="nv">StringEscapeUtils</span><span class="p">]))</span>
+</code></pre></div>
+
+</details>
+<h3 id="helping-items">Helping Items<a class="headerlink" href="#helping-items" title="Permanent link">&para;</a></h3>
+<h2 id="img-suffix-re"><code>img-suffix-re</code><a class="headerlink" href="#img-suffix-re" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="nv">img-suffix-re</span>
+  <span class="o">#</span><span class="s">&quot;(?i)(png|bmp|jpg|jpeg)$&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="user-src-fn"><code>*user-src-fn*</code><a class="headerlink" href="#user-src-fn" title="Permanent link">&para;</a></h2>
+<p>User-defined function to use for SRC blocks of code. This
+  function will be called with the SRC block map passed in.</p>
+<details class="tip"><summary>(def)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">def </span><span class="o">^</span><span class="ss">:dynamic</span> <span class="nv">*user-src-fn*</span> 
+  <span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">x</span><span class="p">]</span> <span class="nv">nil</span><span class="p">))</span>
+</code></pre></div>
+
+</details>
+<h2 id="squish-seq"><code>squish-seq</code><a class="headerlink" href="#squish-seq" title="Permanent link">&para;</a></h2>
+<p>For any consecutive sequences, merge them into one.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">squish-seq</span> <span class="nv">s</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">squish-seq</span> 
+  <span class="p">[</span><span class="nv">s</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">letfn</span> <span class="p">[(</span><span class="nf">concat-seq</span> <span class="p">([]</span> <span class="p">[])</span>
+            <span class="p">([</span><span class="nv">x</span> <span class="nv">y</span><span class="p">]</span>
+               <span class="p">(</span><span class="nf">vec</span> 
+                <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">seq? </span><span class="nv">y</span><span class="p">)</span>
+                  <span class="p">(</span><span class="nb">concat </span><span class="nv">x</span> <span class="p">(</span><span class="nf">squish-seq</span> <span class="nv">y</span><span class="p">))</span>
+                  <span class="p">(</span><span class="nb">into </span><span class="nv">x</span> <span class="p">[</span><span class="nv">y</span><span class="p">])))))]</span>
+    <span class="p">(</span><span class="nb">reduce </span><span class="nv">concat-seq</span> <span class="p">[]</span> <span class="nv">s</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="maybe-img"><code>maybe-img</code><a class="headerlink" href="#maybe-img" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">maybe-img</span> <span class="nv">url</span><span class="p">)</span>
+<span class="p">(</span><span class="nf">maybe-img</span> <span class="nv">url</span> <span class="nv">alt</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">maybe-img</span> 
+  <span class="p">([</span><span class="nv">url</span><span class="p">]</span> <span class="p">(</span><span class="nf">maybe-img</span> <span class="nv">url</span> <span class="nv">url</span><span class="p">))</span>
+  <span class="p">([</span><span class="nv">url</span> <span class="nv">alt</span><span class="p">]</span>
+     <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">re-find </span><span class="nv">img-suffix-re</span> <span class="nv">url</span><span class="p">)</span>
+       <span class="p">[</span><span class="ss">:figure</span> <span class="p">[</span><span class="ss">:img</span> <span class="p">{</span><span class="ss">:src</span> <span class="nv">url</span> <span class="ss">:alt</span> <span class="nv">alt</span><span class="p">}]</span> <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:figcaption</span><span class="p">]</span> <span class="nv">alt</span><span class="p">)]</span>
+       <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:a</span> <span class="p">{</span><span class="ss">:href</span> <span class="nv">url</span><span class="p">}]</span> <span class="nv">alt</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h2 id="elmtype"><code>elmtype</code><a class="headerlink" href="#elmtype" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">elmtype</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">elmtype</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">map? </span><span class="nv">x</span><span class="p">)</span>
+    <span class="p">(</span><span class="nb">if-let </span><span class="p">[</span><span class="nv">t</span> <span class="p">(</span><span class="ss">:type</span> <span class="nv">x</span><span class="p">)]</span>
+      <span class="nv">t</span>
+      <span class="ss">:root</span><span class="p">)</span>
+    <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nf">sequential?</span> <span class="nv">x</span><span class="p">)</span>
+      <span class="ss">:seq</span>
+      <span class="ss">:default</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="hiccupify"><code>hiccupify</code><a class="headerlink" href="#hiccupify" title="Permanent link">&para;</a></h2>
+<details class="tip"><summary>(defmulti)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmulti </span><span class="nv">hiccupify</span> <span class="nv">elmtype</span><span class="p">)</span>
+<span class="p">(</span><span class="kd">defmulti </span><span class="nv">blockprocess</span> <span class="ss">:block</span><span class="p">)</span>
+</code></pre></div>
+
+</details>
+<h2 id="hiccup"><code>hiccup</code><a class="headerlink" href="#hiccup" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccup</span> <span class="nv">r</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">hiccup</span> <span class="p">[</span><span class="nv">r</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">squish-seq</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">r</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h2 id="org-to-html"><code>org-to-html</code><a class="headerlink" href="#org-to-html" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">org-to-html</span> <span class="nv">r</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="tip"><summary>(defn)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defn </span><span class="nv">org-to-html</span> <span class="p">[</span><span class="nv">r</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">hiccup.core/html</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">r</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h3 id="blockprocess-src">blockprocess :src<a class="headerlink" href="#blockprocess-src" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">blockprocess</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">blockprocess</span> <span class="ss">:src</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">if-let </span><span class="p">[</span><span class="nv">c</span> <span class="p">(</span><span class="nb">and </span><span class="nv">*user-src-fn*</span> <span class="p">(</span><span class="nf">*user-src-fn*</span> <span class="nv">x</span><span class="p">))]</span>
+    <span class="nv">c</span>
+    <span class="p">[</span><span class="ss">:pre</span>
+     <span class="p">[</span><span class="ss">:code</span>
+      <span class="p">(</span><span class="nf">StringEscapeUtils/escapeHtml4</span> <span class="p">(</span><span class="nf">t/join</span> <span class="s">&quot;\n&quot;</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">)))]]))</span>
+</code></pre></div>
+
+</details>
+<h3 id="blockprocess-default">blockprocess :default<a class="headerlink" href="#blockprocess-default" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">blockprocess</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">blockprocess</span> <span class="ss">:default</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[(</span><span class="ss">:block</span> <span class="nv">x</span><span class="p">)]</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-headline">hiccupify :headline<a class="headerlink" href="#hiccupify-headline" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:headline</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">if </span><span class="p">(</span><span class="nb">and </span><span class="p">(</span><span class="ss">:tags</span> <span class="nv">x</span><span class="p">)</span> <span class="p">((</span><span class="ss">:tags</span> <span class="nv">x</span><span class="p">)</span> <span class="s">&quot;noexport&quot;</span><span class="p">))</span>
+    <span class="s">&quot;&quot;</span>
+    <span class="p">[</span><span class="ss">:section</span> <span class="p">{</span><span class="ss">:class</span> <span class="p">(</span><span class="nb">str </span><span class="s">&quot;hsec&quot;</span> <span class="p">(</span><span class="nb">inc </span><span class="p">(</span><span class="ss">:level</span> <span class="nv">x</span><span class="p">))</span> <span class="p">(</span><span class="ss">:tags</span> <span class="nv">x</span><span class="p">))}</span>
+     <span class="p">[(</span><span class="nb">keyword </span><span class="p">(</span><span class="nb">str </span><span class="s">&quot;h&quot;</span> <span class="p">(</span><span class="nb">inc </span><span class="p">(</span><span class="ss">:level</span> <span class="nv">x</span><span class="p">))))</span>
+      <span class="p">(</span><span class="ss">:text</span> <span class="nv">x</span><span class="p">)]</span>
+     <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))]))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-root">hiccupify :root<a class="headerlink" href="#hiccupify-root" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:root</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:section</span> <span class="p">{</span><span class="ss">:id</span> <span class="s">&quot;root&quot;</span> <span class="p">}</span> <span class="p">]</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-list">hiccupify :list<a class="headerlink" href="#hiccupify-list" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:list</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[(</span><span class="ss">:listtype</span> <span class="nv">x</span><span class="p">)]</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-listitem">hiccupify :listitem<a class="headerlink" href="#hiccupify-listitem" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:listitem</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:li</span><span class="p">]</span> <span class="p">(</span><span class="nb">map </span><span class="nv">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-table">hiccupify :table<a class="headerlink" href="#hiccupify-table" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:table</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">rows</span> <span class="p">(</span><span class="ss">:rows</span> <span class="nv">x</span><span class="p">)</span>
+        <span class="nv">hdr?</span> <span class="p">(</span><span class="nb">= </span><span class="p">(</span><span class="nb">second </span><span class="nv">rows</span><span class="p">)</span> <span class="ss">:tline</span><span class="p">)</span>
+        <span class="nv">tbl</span>  <span class="p">[</span><span class="ss">:table</span>
+              <span class="p">(</span><span class="nb">when </span><span class="nv">hdr?</span>
+                <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:tr</span><span class="p">]</span> <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">x</span><span class="p">]</span> <span class="p">[</span><span class="ss">:th</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)])</span> <span class="p">(</span><span class="nb">first </span><span class="nv">rows</span><span class="p">))))]</span>
+        <span class="nv">rows</span> <span class="p">(</span><span class="k">if </span><span class="nv">hdr?</span> <span class="p">(</span><span class="nb">next </span><span class="p">(</span><span class="nb">filter </span><span class="o">#</span><span class="p">(</span><span class="nb">not= </span><span class="ss">:tline</span> <span class="nv">%</span><span class="p">)</span> <span class="nv">rows</span><span class="p">))</span> <span class="nv">rows</span><span class="p">)]</span>
+    <span class="p">(</span><span class="nb">into </span><span class="nv">tbl</span>
+          <span class="p">(</span><span class="nb">for </span><span class="p">[</span><span class="nv">row</span> <span class="nv">rows</span><span class="p">]</span>
+            <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:tr</span><span class="p">]</span> 
+                  <span class="p">(</span><span class="nb">map </span><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">x</span><span class="p">]</span> <span class="p">[</span><span class="ss">:td</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)])</span> <span class="nv">row</span><span class="p">))))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-block">hiccupify :block<a class="headerlink" href="#hiccupify-block" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:block</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nf">blockprocess</span> <span class="nv">x</span><span class="p">))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-link">hiccupify :link<a class="headerlink" href="#hiccupify-link" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:link</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="k">let </span><span class="p">[{</span><span class="ss">:keys</span> <span class="p">[</span><span class="nv">uri</span> <span class="nv">content</span><span class="p">]}</span> <span class="nv">x</span><span class="p">]</span>
+     <span class="p">(</span><span class="nf">maybe-img</span> <span class="nv">uri</span> <span class="nv">content</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-footnote-ref">hiccupify :footnote-ref<a class="headerlink" href="#hiccupify-footnote-ref" title="Permanent link">&para;</a></h3>
+<p>TODO -- consider using :cite?</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:footnote-ref</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">[</span><span class="ss">:a.footnote</span> <span class="p">{</span><span class="ss">:href</span> <span class="p">(</span><span class="nb">str </span><span class="s">&quot;#&quot;</span> <span class="p">(</span><span class="ss">:id</span> <span class="nv">x</span><span class="p">))}</span>
+   <span class="p">(</span><span class="ss">:id</span> <span class="nv">x</span><span class="p">)])</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-footnote">hiccupify :footnote<a class="headerlink" href="#hiccupify-footnote" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:footnote</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:a.footnote-def</span> 
+         <span class="p">{</span><span class="ss">:id</span> <span class="p">(</span><span class="ss">:id</span> <span class="nv">x</span><span class="p">)</span>
+          <span class="ss">:href</span> <span class="p">(</span><span class="nb">str </span><span class="s">&quot;#&quot;</span> <span class="p">(</span><span class="ss">:id</span> <span class="nv">x</span><span class="p">))}]</span>
+   <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<p>TODO -- figure out timestamps</p>
+<h3 id="hiccupify-bold">hiccupify :bold<a class="headerlink" href="#hiccupify-bold" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:bold</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:strong</span><span class="p">]</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-italic">hiccupify :italic<a class="headerlink" href="#hiccupify-italic" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:italic</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:em</span><span class="p">]</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-underline">hiccupify :underline<a class="headerlink" href="#hiccupify-underline" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:underline</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:u</span><span class="p">]</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-code">hiccupify :code<a class="headerlink" href="#hiccupify-code" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:code</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:code</span><span class="p">]</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-comment">hiccupify :comment<a class="headerlink" href="#hiccupify-comment" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:comment</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">list </span><span class="s">&quot;&lt;!-- &quot;</span>
+        <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))</span>
+        <span class="s">&quot; --&gt;&quot;</span>
+        <span class="p">(</span><span class="nb">when-let </span><span class="p">[</span><span class="nv">tgts</span> <span class="p">(</span><span class="nb">filter </span><span class="o">#</span><span class="p">(</span><span class="nb">= </span><span class="ss">:target</span> <span class="p">(</span><span class="ss">:type</span> <span class="nv">%</span><span class="p">))</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))]</span>
+          <span class="p">(</span><span class="nb">map </span><span class="nv">hiccupify</span> <span class="nv">tgts</span><span class="p">))))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-verbatim">hiccupify :verbatim<a class="headerlink" href="#hiccupify-verbatim" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:verbatim</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">into </span><span class="p">[</span><span class="ss">:verbatim</span><span class="p">]</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">)))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-target">hiccupify :target<a class="headerlink" href="#hiccupify-target" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:target</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">[</span><span class="ss">:a</span> <span class="p">{</span><span class="ss">:id</span> <span class="p">(</span><span class="ss">:id</span> <span class="nv">x</span><span class="p">)</span> <span class="ss">:href</span> <span class="p">(</span><span class="nb">str </span><span class="s">&quot;#&quot;</span> <span class="p">(</span><span class="ss">:id</span> <span class="nv">x</span><span class="p">))}])</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-p">hiccupify :p<a class="headerlink" href="#hiccupify-p" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:p</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+   <span class="p">[</span><span class="ss">:p</span> <span class="p">(</span><span class="nf">hiccupify</span> <span class="p">(</span><span class="ss">:content</span> <span class="nv">x</span><span class="p">))])</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-seq">hiccupify :seq<a class="headerlink" href="#hiccupify-seq" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:seq</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+        <span class="p">(</span><span class="nb">map </span><span class="nv">hiccupify</span> <span class="nv">x</span><span class="p">))</span>
+</code></pre></div>
+
+</details>
+<h3 id="hiccupify-default">hiccupify :default<a class="headerlink" href="#hiccupify-default" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nf">hiccupify</span> <span class="nv">x</span><span class="p">)</span>
+</code></pre></div>
+
+<details class="info"><summary>(defmethod)</summary><div class="highlight"><pre><span></span><code><span class="p">(</span><span class="kd">defmethod </span><span class="nv">hiccupify</span> <span class="ss">:default</span> <span class="p">[</span><span class="nv">x</span><span class="p">]</span>
+  <span class="p">(</span><span class="nb">str </span><span class="nv">x</span> <span class="s">&quot;\n&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+</details>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../core/" title="Core" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Core
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../inline-test/" title="orgmode.inline-test" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                orgmode.inline-test
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.83fe6e3c.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7e1cb91c.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.37585f48.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
